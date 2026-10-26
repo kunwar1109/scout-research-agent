@@ -95,6 +95,8 @@ button { font: inherit; cursor: pointer; }
   background: linear-gradient(transparent 55%, var(--marker) 55%);
   color: var(--ink);
 }
+/* "Thinking…" / "Loading research…" placeholders: no marker highlight, just the pulsing dot. */
+.step.step-wait[data-state='running'] .step-label { background: none; }
 .step[data-state='running']::before { border-color: var(--ink); animation: pulse 1.2s ease-in-out infinite; }
 @keyframes pulse { 50% { transform: scale(1.35); } }
 @media (prefers-reduced-motion: reduce) { .step[data-state='running']::before { animation: none; } }

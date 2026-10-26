@@ -122,7 +122,7 @@ export function Chat({ id: chatId, initialMessages }: { id: string; initialMessa
           )}
 
           {status === 'submitted' && (
-            <ol className="trail"><li className="step" data-state="running"><span className="step-label">Thinking…</span></li></ol>
+            <ol className="trail"><li className="step step-wait" data-state="running"><span className="step-label">Thinking…</span></li></ol>
           )}
           <div ref={bottomRef} />
         </div>

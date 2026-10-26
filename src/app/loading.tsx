@@ -9,7 +9,7 @@ export default function Loading() {
           <span className="tagline">Searches, reads, checks the math, cites its sources.</span>
         </header>
         <div className="thread">
-          <ol className="trail"><li className="step" data-state="running"><span className="step-label">Loading research…</span></li></ol>
+          <ol className="trail"><li className="step step-wait" data-state="running"><span className="step-label">Loading research…</span></li></ol>
         </div>
       </main>
       <aside className="aside" aria-hidden />
