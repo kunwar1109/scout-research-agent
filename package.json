@@ -1,0 +1,51 @@
+{
+  "name": "research-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:setup": "node --env-file=.env.local scripts/db-setup.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.105",
+    "@ai-sdk/mcp": "^2.0.84",
+    "@ai-sdk/provider": "^4.0.34",
+    "@ai-sdk/react": "^4.0.157",
+    "@neondatabase/serverless": "^1.2.0",
+    "ai": "^7.0.153",
+    "mathjs": "^15.2.0",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^10.13.0",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "overrides": {
+    "eslint-plugin-import": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-jsx-a11y": {
+      "eslint": "$eslint"
+    },
+    "eslint-plugin-react": {
+      "eslint": "$eslint"
+    }
+  }
+}
